@@ -7,7 +7,15 @@ A Discord bot that monitors channels for URL patterns and sends DM claim links t
 - **`/claim`** - Configure a channel to monitor for URL patterns
 - **`/claimstatus`** - View all active monitoring configurations
 - **`/claimremove`** - Remove monitoring from a channel
+- **`/sticky`** - Create a sticky embed message that stays at the bottom
+- **`/unsticky`** - Remove the sticky message from a channel
 - **Notion Integration** - Stores all data in Notion databases
+
+## Sticky Message
+The `/sticky` command opens a modal where you can create a colored embed message.
+- **Auto-Resend:** The message automatically resends every **5 messages** or **15 seconds** (whichever happens first).
+- **Clean Chat:** The old sticky message is automatically deleted before the new one is sent.
+- **Admin Only:** Only the configured admin user can create/remove sticky messages.
 
 ## Setup
 
